@@ -45,29 +45,29 @@ class Preference {
 
   // String get & set
   String? getString(String key) {
-    return _pref!.getString(key);
+    return _pref?.getString(key);
   }
 
-  Future<bool> setString(String key, String value) {
-    return _pref!.setString(key, value);
+  Future<bool>? setString(String key, String value) {
+    return _pref?.setString(key, value);
   }
 
   // Int get & set
   int? getInt(String key) {
-    return _pref!.getInt(key);
+    return _pref?.getInt(key);
   }
 
-  Future<bool> setInt(String key, int value) {
-    return _pref!.setInt(key, value);
+  Future<bool>? setInt(String key, int value) {
+    return _pref?.setInt(key, value);
   }
 
   // Bool get & set
   bool? getBool(String key) {
-    return _pref!.getBool(key);
+    return _pref?.getBool(key);
   }
 
-  Future<bool> setBool(String key, bool value) {
-    return _pref!.setBool(key, value);
+  Future<bool>? setBool(String key, bool value) {
+    return _pref?.setBool(key, value);
   }
 
   // Double get & set
@@ -75,8 +75,7 @@ class Preference {
     return _pref!.getDouble(key);
   }
 
-  Future<bool> setDouble(String key, double value) {
-    return _pref!.setDouble(key, value);
+  Future<bool>? setDouble(String key, double value) {
+    return _pref?.setDouble(key, value);
   }
-
 }
