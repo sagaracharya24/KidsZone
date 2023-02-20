@@ -20,6 +20,14 @@ pipeline {
                 sh 'flutter test'
             }
         }
+        stage('Bump app version') {
+                    steps {
+                        sh 'cider bump patch'
+                        sh 'git checkout main'
+                        sh 'git commit -am "Updated version number"'
+                    }
+                }
+
         // stage('Increament Build Number'){
         //     steps{
         //          sh '''
@@ -53,5 +61,6 @@ pipeline {
                         distributionGroups: 'beta'
            }
         }
+
     }
 }
