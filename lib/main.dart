@@ -65,12 +65,18 @@ class _MyAppState extends State<MyApp> with WidgetsBindingObserver{
 
   @override
   void initState() {
-    WidgetsBinding.instance!.addObserver(this);
-    precacheImage(const AssetImage("assets/background/bg_home.webp"), context);
-    _getPreference();
-    if (isSound!) {
-      Utils.playAudio();
-    }
+    WidgetsBinding.instance.addObserver(this);
+
+    WidgetsBinding.instance.addPostFrameCallback((_) async {
+      precacheImage(const AssetImage("assets/background/bg_home.webp"), context);
+      _getPreference();
+      if (isSound!) {
+        Utils.playAudio();
+      }
+    });
+
+
+
     super.initState();
   }
 
