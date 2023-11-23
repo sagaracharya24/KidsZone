@@ -6,7 +6,7 @@ import 'package:flutter/foundation.dart';
 class AdHelper {
   static String get bannerAdUnitId {
     if (!kReleaseMode) {
-      debugPrint("Debug Mode");
+      debugPrint("Debug Mode on");
       if (Platform.isAndroid) {
         return "ca-app-pub-3940256099942544/6300978111";
       } else if (Platform.isIOS) {
