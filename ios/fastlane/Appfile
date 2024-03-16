@@ -1,0 +1,8 @@
+app_identifier("com.kidscomfortzone.kidszone") # The bundle identifier of your app
+apple_id("acharyasagar282@gmail.com") # Your Apple Developer Portal username
+
+itc_team_id("124041418") # App Store Connect Team ID
+team_id("Q8B92A73NX") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile
