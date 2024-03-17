@@ -48,7 +48,7 @@ class Utils {
   static const audio = "sounds/background_music.mp3";
 
   static playAudio() async {
-    audioPlayer  = await audioCache.loop(audio, mode: PlayerMode.LOW_LATENCY);
+    audioPlayer.audioCache = AudioCache(prefix: audio);
   }
 
   static Map<String, Color> colorList = const {
@@ -62,18 +62,16 @@ class Utils {
     "yellow": Color(0XFFF6D913),
   };
 
-  static nonPersonalizedAds()  {
-    if(Platform.isIOS) {
-      if (Preference.shared.getString(Preference.trackStatus) != Constant.trackingStatus) {
+  static nonPersonalizedAds() {
+    if (Platform.isIOS) {
+      if (Preference.shared.getString(Preference.trackStatus) !=
+          Constant.trackingStatus) {
         return true;
       } else {
         return false;
       }
-    }else {
+    } else {
       return false;
     }
   }
-
-
-
 }
