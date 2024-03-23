@@ -19,7 +19,7 @@ platform :ios do
   lane :beta do
     get_certificates           # invokes cert
     get_provisioning_profile   # invokes sigh
-    gym(workspace: "Runner.xcworkspace", scheme: "Runner")
+    build_app(workspace: "Runner.xcworkspace", scheme: "Runner")
     upload_to_testflight(skip_waiting_for_build_processing: true)
   end
 end
