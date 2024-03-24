@@ -1,4 +1,4 @@
-package com.example.kids_preschool
+package com.kidscomfortzone.kidszone
 
 import android.os.Build
 import android.os.Bundle
