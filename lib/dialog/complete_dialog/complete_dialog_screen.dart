@@ -29,7 +29,7 @@ class _CompleteDialogState extends State<CompleteDialog> {
   @override
   void initState() {
     restartFunction = widget.restartFunction;
-    _createInterstitialAd();
+   //hhh _createInterstitialAd();
     super.initState();
   }
 

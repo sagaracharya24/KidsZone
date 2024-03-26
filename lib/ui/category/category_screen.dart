@@ -55,8 +55,8 @@ class _CategoryScreenState extends State<CategoryScreen>
 
   @override
   void initState() {
-    _createBottomBannerAd();
-    _createInterstitialAd();
+    //_createBottomBannerAd();
+   // _createInterstitialAd();
     _getDataFromDatabase();
     _getPreference();
     super.initState();
@@ -179,13 +179,13 @@ class _CategoryScreenState extends State<CategoryScreen>
                   ),
                 ),
 
-                  (_isBottomBannerAdLoaded)
-                    ? SizedBox(
-                  height: _bottomBannerAd.size.height.toDouble(),
-                  width: _bottomBannerAd.size.width.toDouble(),
-                  child: AdWidget(ad: _bottomBannerAd),
-                )
-                    : Container()
+                //   (_isBottomBannerAdLoaded)
+                //     ? SizedBox(
+                //   height: _bottomBannerAd.size.height.toDouble(),
+                //   width: _bottomBannerAd.size.width.toDouble(),
+                //   child: AdWidget(ad: _bottomBannerAd),
+                // )
+                //     : Container()
               ],
             ),
           ),
@@ -252,7 +252,7 @@ class _CategoryScreenState extends State<CategoryScreen>
     return InkWell(
       onTap: () {
 
-        _showInterstitialAd(index);
+      //  _showInterstitialAd(index);
       },
       child: Container(
         decoration: BoxDecoration(
