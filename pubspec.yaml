@@ -30,7 +30,7 @@ dependencies:
   app_tracking_transparency: ^2.0.4
 
 dependency_overrides:
-  mason_logger: ^0.2.12
+  mason_logger: 0.2.12
 dev_dependencies:
   flutter_test:
     sdk: flutter
